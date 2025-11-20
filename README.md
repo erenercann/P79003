@@ -14,14 +14,12 @@ The purpose of the project is to prevent the operator from entering incorrect da
 Information on the maximum box capacities of the desired items will be provided.
 Using this information, the system will automatically perform the calculation.
 
-##
-
 It will read from F9G00 PR and retrieve the item information.
 It will check the P790W2 table; if the item is in this table, the system will perform the calculation itself.
 The rule here is to check the items of PRs coming from certain lines, i.e., products ranging from 10 kg to 210 kg. It will not perform calculations for 1 kg or 8 kg.
 Due to double winding, the calculation must be double. If the result is an odd number, it will add +1 and recalculate the meters that will fall into each box.
 
-----------------------------------------------------------------------------------------------------------------
+##
 
 Program, mevcut bir programa entegre gibi düşünebiliriz.
 
@@ -35,8 +33,6 @@ Operatörün yanlış girdi girmesinin önüne geçmek.
 
 İstenilen itemların max kutu kapasitelerinin bilgileri verilecek.
 Bu bilgiler sayesinde sistem otomatik olarak hesaplama işlemi yapacak.
-
-##
 
 F9G00 PR 'den okuyacak ve item bilgisini alacak.
 P790W2 tablosuna bakacak eğer item bu tabloda mevcut ise sistem kendisi hesaplama işlemini yapacak.
