@@ -1,0 +1,113 @@
+     A***************************************************************
+     A*                                                             *
+     A*  SYSTEM : EROMIX SYSTEM                                      *
+     A*                                                             *
+     A*  FILE  NAME   : PRODUCTION ALLOCATION FILE                  *
+     A*        ID     : F9G00                                       *
+     A*  AUTHOR       : EREN00                                      *
+     A*  WRITTEN DATE : 2025/11/19                                  *
+     A*                                                             *
+     A*  UPD.HISTORY  UPDATED BY   UPD.DATE   UPD.CONTENTS          *
+     A*                                                             *
+     A***************************************************************
+     A*
+     A**                                    UNIQUE
+     A          R F9G00R
+     A*
+     A            PSHN9G        10A         COLHDG('PRODUCTION SHEET NO.')
+     A            SCTC9G        02A         COLHDG('SECTION CODE        ')
+     A                                      TEXT('SECTION CODE               ')
+     A            LN1C9G        03A         COLHDG('LINE NO. CODE 1     ')
+     A                                      TEXT('LINE NO. CODE 1            ')
+     A            LN2C9G        02A         COLHDG('LINE NO. CODE 2     ')
+     A                                      TEXT('LINE NO. CODE 2            ')
+     A            ITMC9G        07A         COLHDG('ITEM CODE           ')
+     A                                      TEXT('ITEM CODE                  ')
+     A            LNGV9G        05S 1       COLHDG('LENGTH              ')
+     A                                      TEXT('LENGTH                     ')
+     A            LUNC9G        01A         COLHDG('LENGTH UNIT CODE    ')
+     A                                      TEXT('LENGTH UNIT CODE           ')
+     A            CLRC9G        05A         COLHDG('COLOR CODE          ')
+     A                                      TEXT('COLOR CODE                 ')
+     A            PSHQ9G        17S 7       COLHDG('PRODUCTION SHEET QUA')
+     A                                      TEXT('PRODUCTION SHEET QUANTITY  ')
+     A            PSEU9G        08S 0       COLHDG('ESTIMATED TIME OF PR')
+     A                                      TEXT('ESTIMATED TIME OF PRODUCTI -
+     A                                      ON START               ')
+     A            PSSU9G        08S 0       COLHDG('PRODUCTION SHEET ISS')
+     A                                      TEXT('PRODUCTION SHEET ISSUE DAT -
+     A                                      E                      ')
+     A            PSDU9G        08S 0       COLHDG('PRODUCTION START DAT')
+     A                                      TEXT('PRODUCTION START DATE      ')
+     A            UAVU9G        08S 0       COLHDG('USING AVAILABLE DATE')
+     A                                      TEXT('USING AVAILABLE DATE       ')
+     A            PDEF9G        01A         COLHDG('PRODUCTION COMPLETE ')
+     A                                      TEXT('PRODUCTION COMPLETE FLAG   ')
+     A            CLNC9G        06A         COLHDG('CLIENT CODE         ')
+     A                                      TEXT('CLIENT CODE                ')
+     A            NELV9G        07S 0       COLHDG('NUMBER OF ELEMENT (E')
+     A                                      TEXT('NUMBER OF ELEMENT (ELEMENT -
+     A                                      )                      ')
+     A            NEMV9G        07S 0       COLHDG('NUMBER OF ELEMENT (S')
+     A                                      TEXT('NUMBER OF ELEMENT (SPACE)  ')
+     A            ELMV9G        07S 1       COLHDG('ELEMENT LEMGTH (MM) ')
+     A                                      TEXT('ELEMENT LEMGTH (MM)        ')
+     A            SLLV9G        07S 1       COLHDG('SPACE LEMGTH (MM)   ')
+     A                                      TEXT('SPACE LEMGTH (MM)          ')
+     A            TEXV9G        05S 1       COLHDG('TOP EXTENSION (MM)  ')
+     A                                      TEXT('TOP EXTENSION (MM)         ')
+     A            BEXV9G        05S 1       COLHDG('BOTTOM EXTENSION (MM')
+     A                                      TEXT('BOTTOM EXTENSION (MM)      ')
+     A            IPCC9G        02A         COLHDG('INNER PACKING CODE  ')
+     A                                      TEXT('INNER PACKING CODE         ')
+     A            S1PN9G        10A         COLHDG('PRODUCTION SCHEDULE ')
+     A                                      TEXT('PRODUCTION SCHEDULE NO.1   ')
+     A            S2PN9G        10A         COLHDG('PRODUCTION SCHEDULE ')
+     A                                      TEXT('PRODUCTION SCHEDULE NO.2   ')
+     A            S3PN9G        10A         COLHDG('PRODUCTION SCHEDULE ')
+     A                                      TEXT('PRODUCTION SCHEDULE NO.3   ')
+     A            S4PN9G        10A         COLHDG('PRODUCTION SCHEDULE ')
+     A                                      TEXT('PRODUCTION SCHEDULE NO.4   ')
+     A            S5PN9G        10A         COLHDG('PRODUCTION SCHEDULE ')
+     A                                      TEXT('PRODUCTION SCHEDULE NO.5   ')
+     A            PDSC9G        01A         COLHDG('PRODUCTION SHEDULING')
+     A                                      TEXT('PRODUCTION SHEDULING DISTI -
+     A                                      NCTION CODE            ')
+     A            ILIC9G        01A         COLHDG('INTER LABEL ISSUE TY')
+     A                                      TEXT('INTER LABEL ISSUE TYPE COD -
+     A                                      E                      ')
+     A            PSST9G        06S 0       COLHDG('PRODUCTION SHEET ISS')
+     A                                      TEXT('PRODUCTION SHEET ISSUE TIM -
+     A                                      E                      ')
+     A            EPFU9G        08S 0       COLHDG('ESTIMATED TIME OF PR')
+     A                                      TEXT('ESTIMATED TIME OF PRODUCTI -
+     A                                      ON FINISH              ')
+     A            QUNC9G        02A         COLHDG('QUANTITY UNIT CODE  ')
+     A                                      TEXT('QUANTITY UNIT CODE         ')
+     A            STON9G        10A         COLHDG('STOCK OUT NO.       ')
+     A                                      TEXT('STOCK OUT NO.              ')
+     A            SHIC9G        01A         COLHDG('PRODUCTION SHEET ISS')
+     A                                      TEXT('PRODUCTION SHEET ISSUE COD -
+     A                                      E                      ')
+     A            SHIN9G        10A         COLHDG('PRODUCTION SHEET ISS')
+     A                                      TEXT('PRODUCTION SHEET ISSUE SEQ -
+     A                                      UENCE NUMBER           ')
+     A            UIDC9G        10A         COLHDG('USER ID             ')
+     A                                      TEXT('USER ID                    ')
+     A            PRGC9G        08A         COLHDG('PROGRAM ID          ')
+     A                                      TEXT('PROGRAM ID                 ')
+     A            DEVC9G        10A         COLHDG('DEVICE CODE         ')
+     A                                      TEXT('DEVICE CODE                ')
+     A            RADU9G        08S 0       COLHDG('REGISTER DATE       ')
+     A                                      TEXT('REGISTER DATE              ')
+     A            RADT9G        06S 0       COLHDG('REGISTER TIME       ')
+     A                                      TEXT('REGISTER TIME              ')
+     A            RUPU9G        08S 0       COLHDG('LAST UPDATE DATE    ')
+     A                                      TEXT('LAST UPDATE DATE           ')
+     A            RUPT9G        06S 0       COLHDG('LAST UPDATE TIME    ')
+     A                                      TEXT('LAST UPDATE TIME           ')
+     A            RCMC9G        06A         COLHDG('REGISTER COMPANY COD')
+     A                                      TEXT('REGISTER COMPANY CODE      ')
+     A** KEYS
+     A          K PSHN9G
+     A***************************************************************

@@ -1,0 +1,89 @@
+     A*%%TS  SD  20251119  134233  WUSR2224    REL-V7R2M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/D021F00)
+     A                                      MSGLOC(24)
+     A                                      PRINT
+     A                                      HLPTITLE('APPL$CAT$ON HELP')
+     A                                      HLPPNLGRP(APPHLP APPHLPPNL)
+     A                                      INDARA
+     A                                      ALTHELP
+     A                                      HELP
+     A                                      CA03(03 'EX$T')
+     A                                      CA12(12 'CANCEL')
+     A          R DSP001
+     A*%%TS  SD  20251119  134233  WUSR2224    REL-V7R2M0  5770-WDS
+     A                                      OVERLAY
+     A                                  6  2'                             '
+     A                                      DSPATR(RI)
+     A                                  7  2' '
+     A                                      DSPATR(RI)
+     A                                  7 30' '
+     A                                      DSPATR(RI)
+     A                                  8  2' '
+     A                                      DSPATR(RI)
+     A                                  8  4'FORM NO     :'
+     A                                      DSPATR(HI)
+     A            EPRDNUM       10A  O  8 18
+     A                                  8 30' '
+     A                                      DSPATR(RI)
+     A                                  9  2' '
+     A                                      DSPATR(RI)
+     A                                  9  4'ITEM NO     :'
+     A                                      DSPATR(HI)
+     A            EITMCOD        7A  O  9 18
+     A                                  9 30' '
+     A                                      DSPATR(RI)
+     A                                 10  2' '
+     A                                      DSPATR(RI)
+     A                                 10  4'TOPLAM METRE:'
+     A                                      DSPATR(HI)
+     A            TOPMTR         6Y 0O 10 18EDTCDE(3)
+     A                                 10 30' '
+     A                                      DSPATR(RI)
+     A                                 11  2' '
+     A                                      DSPATR(RI)
+     A                                 11  4'HER KUTUDA  :'
+     A                                      DSPATR(HI)
+     A            KUTMTR         6Y 2O 11 18EDTCDE(3)
+     A                                 11 30' '
+     A                                      DSPATR(RI)
+     A                                 12  2' '
+     A                                      DSPATR(RI)
+     A                                 12 30' '
+     A                                      DSPATR(RI)
+     A                                 13  2' '
+     A                                      DSPATR(RI)
+     A                                 13  4'KUTU SAYISI :'
+     A                                      DSPATR(HI)
+     A            KUTSAY         2Y 0O 13 18COLOR(TRQ)
+     A                                      EDTCDE(3)
+     A                                 13 30' '
+     A                                      DSPATR(RI)
+     A                                 14  2' '
+     A                                      DSPATR(RI)
+     A                                 14 30' '
+     A                                      DSPATR(RI)
+     A                                 15  2'                             '
+     A                                      DSPATR(RI)
+     A          R HDRLIN
+     A*%%TS  SD  20210517  153121  GBICER      REL-V7R3M0  5770-WDS
+     A                                      ASSUME
+     A            HDRNUM         7A  H
+     A            HDRDTA        29A  O  1  2MSGID(&HDRNUM SRVMSGFIL)
+     A                                      DSPATR(HI)
+     A            DEVNAM        10A  O  2  2
+     A                                  2 14DATE
+     A                                      EDTWRD('0  /  /  ')
+     A                                  2 23TIME
+     A                                      EDTWRD('0  :  :  ')
+     A          R FNCLIN
+     A*%%TS  SD  20210517  153121  GBICER      REL-V7R3M0  5770-WDS
+     A                                      OVERLAY
+     A            FNCNUM         7A  H
+     A            FNCDTA        29A  O 16  2MSGID(&FNCNUM SRVMSGFIL)
+     A          R MSGLIN
+     A*%%TS  SD  20210517  153121  GBICER      REL-V7R3M0  5770-WDS
+     A                                      OVERLAY
+     A            MSGNUM         7A  H
+     A            MSGDTA        29A  O 17  2
