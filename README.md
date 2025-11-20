@@ -19,6 +19,8 @@ It will check the P790W2 table; if the item is in this table, the system will pe
 The rule here is to check the items of PRs coming from certain lines, i.e., products ranging from 10 kg to 210 kg. It will not perform calculations for 1 kg or 8 kg.
 Due to double winding, the calculation must be double. If the result is an odd number, it will add +1 and recalculate the meters that will fall into each box.
 
+The program will run with parameters, meaning we will write parameters to the P79003X program and call P79003 from there.
+
 ##
 
 Program, mevcut bir programa entegre gibi düşünebiliriz.
@@ -38,4 +40,6 @@ F9G00 PR 'den okuyacak ve item bilgisini alacak.
 P790W2 tablosuna bakacak eğer item bu tabloda mevcut ise sistem kendisi hesaplama işlemini yapacak.
 Burada olan kural belli hatlardan çıkan PR 'lerin itemlarını kontrol edecek yani 10 kg. ile 210 kg. aralığında çıkan ürünleri. 1KG. 8 KG. da hesaplama yapmayacak.
 Çift sarım olduğundan dolayı hesaplama çift olmak zorundadır. Sonuç tek sayı olursa +1 yapacak ve her kutuya düşecek olan metreyi tekrar hesaplayacak.
+
+Program parametre ile çalışacak yani P79003X programına parametre yazıp oradan P79003 Call edeceğiz.
 
