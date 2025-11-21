@@ -50,7 +50,7 @@
      C     pPRDNUM       CHAIN     F9G00R                             99
       *
      C                   IF        *IN99 = *OFF
-     C                   IF        LN1C9G = '130' AND
+     C                   IF        LN1C9G = '130' AND (
      C                             LN2C9G = '20'  OR
      C                             LN2C9G = '25'  OR
      C                             LN2C9G = '26'  OR
@@ -60,14 +60,16 @@
      C                             LN2C9G = '33'  OR
      C                             LN2C9G = '35'  OR
      C                             LN2C9G = '40'  OR
-     C                             LN2C9G = '45'
+     C                             LN2C9G = '45' )
      C                   EVAL      ePRDNUM = pPRDNUM
      C*                  EVAL      TOPMTR  = PSHQ9G
      C                   EXSR      ITEMKONTROL
-     C                   ENDIF
      C                   EVAL      KUTSAY  = KUTUBOY
      C                   ELSE
-     C                   EVAL      MESAJ = 'PR BULUNAMADI'
+     C                   EXSR      Ini_000
+     C                   ENDIF
+     C                   ELSE
+     C                   EXSR      Ini_000
      C                   ENDIF
       *
      C                   ENDSR
@@ -94,4 +96,5 @@
      C                   EVAL      KUTMTR = TOPMTR / KUTUBOY
      C                   ENDIF
      C                   ENDSR
+
       *---------------------------------------------------------------------------------------------
