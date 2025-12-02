@@ -1,16 +1,16 @@
      H DFTACTGRP(*NO) ACTGRP(*NEW)            
-FFA000     IF   E           K DISK       
-FF9G00     IF   E           K DISK       
-FP790W2    IF   E           K DISK       
-FP79003D   CF   E             WORKSTN    
- *                                       
-D pPRDNUM         S             10A      
-D pFIXBOX         S              2S 0    
-D eITMCOD         S              7A      
-D EITMCW2         S              7A      
-D MESAJ           S             50A      
-D HERKUTU         S              6  2    
- *                                       
+     FFA000     IF   E           K DISK       
+     FF9G00     IF   E           K DISK       
+     FP790W2    IF   E           K DISK       
+     FP79003D   CF   E             WORKSTN    
+      *                                       
+     D pPRDNUM         S             10A      
+     D pFIXBOX         S              2S 0    
+     D eITMCOD         S              7A      
+     D EITMCW2         S              7A      
+     D MESAJ           S             50A      
+     D HERKUTU         S              6  2    
+      *                                       
 D KUTUBOL         S             10S 2    
 D KUTUBL          S             50A      
  * hesaplama deðiþkenleri                
@@ -230,5 +230,6 @@ C                   ENDIF
 C                   ENDIF                                    
  *                                                           
 C                   ENDSR                                    
+
 
 
