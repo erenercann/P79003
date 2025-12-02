@@ -1,4 +1,4 @@
-    H DFTACTGRP(*NO) ACTGRP(*NEW)            
+     H DFTACTGRP(*NO) ACTGRP(*NEW)            
 FFA000     IF   E           K DISK       
 FF9G00     IF   E           K DISK       
 FP790W2    IF   E           K DISK       
@@ -230,4 +230,5 @@ C                   ENDIF
 C                   ENDIF                                    
  *                                                           
 C                   ENDSR                                    
+
 
