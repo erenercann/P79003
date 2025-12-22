@@ -215,13 +215,15 @@
       *                                                               
       * (1-1) VEYA (1-3) Kontrolü                                     
      C                   IF        (ST1CA0 = '1' AND ST2CA0 = '1') OR 
-     C                             (ST1CA0 = '1' AND ST2CA0 = '3')    
+     C                             (ST1CA0 = '1' AND ST2CA0 = '3') AND
+     C                             (UT6CA0 = 'L')
       * Metreyi 2'ye boluyoruz (Tek kutuda cift goz gibi)         
      C                   EVAL      KUTMTR = TOPMTR / 2            
       *                                                           
      C                   ELSE                                     
       * (1-2) Durumu -> Oldugu gibi atiyoruz                      
-     C                   IF        ST1CA0 = '1' AND ST2CA0 = '2'  
+     C                   IF        ST1CA0 = '1' AND ST2CA0 = '2'  AND
+     C                             UT6CA0 = 'M'
      C                   EVAL      KUTMTR = TOPMTR                
      C                   ELSE                                     
       * Diger durumlar (Guvenlik icin oldugu gibi birakalim)      
@@ -230,4 +232,5 @@
      C                   ENDIF                                    
       *                                                           
      C                   ENDSR                                    
+
 
