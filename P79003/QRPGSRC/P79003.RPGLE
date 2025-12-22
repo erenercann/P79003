@@ -138,8 +138,10 @@
      C                   ENDIF                          
      C                                                  
       * (1-1) VEYA (1-3) -> çift kutu zorunlu çift sarýmdan dolayý                   
-     C                   IF        (ST1CA0 = '1' AND ST2CA0 = '1') OR                
-     C                             (ST1CA0 = '1' AND ST2CA0 = '3')                   
+     C                   IF        (ST1CA0 = '1' AND ST2CA0 = '1' AND
+     C                             UT6CA0 = 'L' ) OR
+     C                             (ST1CA0 = '1' AND ST2CA0 = '3' AND 
+     C                             UT6CA0 = 'L' )
       *                                                                              
      C                   EVAL      INITIALN = %INT(TOPMTR / MKUTW2)                  
      C                   IF        %REM(TOPMTR : MKUTW2) > 0                         
@@ -171,7 +173,8 @@
       *                                                          
      C                   ELSE                                    
       * 1-2 -> INI_001 çaðýracak.                                
-     C                   IF        ST1CA0 = '1' AND ST2CA0 = '2' 
+     C                   IF        ST1CA0 = '1' AND ST2CA0 = '2' AND
+     C                             UT6CA0 = 'M'
      C                   EXSR      Ini_001                       
      C                   ELSE                                    
       * Tanimlanmamis durum                                      
@@ -232,5 +235,6 @@
      C                   ENDIF                                    
       *                                                           
      C                   ENDSR                                    
+
 
 
