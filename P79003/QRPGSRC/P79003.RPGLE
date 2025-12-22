@@ -174,7 +174,7 @@
      C                   ELSE                                    
       * 1-2 -> INI_001 çaðýracak.                                
      C                   IF        ST1CA0 = '1' AND ST2CA0 = '2' AND
-     C                             UT6CA0 = 'M'
+     C                             UT6CA0 = 'M' 
      C                   EXSR      Ini_001                       
      C                   ELSE                                    
       * Tanimlanmamis durum                                      
@@ -235,6 +235,7 @@
      C                   ENDIF                                    
       *                                                           
      C                   ENDSR                                    
+
 
 
 
